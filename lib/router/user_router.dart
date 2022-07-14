@@ -7,6 +7,7 @@ import 'package:flutter_boilerplate/pages/home_screen.dart';
     AutoRoute(
       path: '/',
       name: "HomeRoute",
+      initial: true,
       page: HomeScreen,
     ),
   ],

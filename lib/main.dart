@@ -16,8 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routeInformationParser: userRouter.defaultRouteParser(),
       routerDelegate: userRouter.delegate(),
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Boilerplate',
+      theme: ThemeData(primarySwatch: Colors.red),
     );
   }
 }
