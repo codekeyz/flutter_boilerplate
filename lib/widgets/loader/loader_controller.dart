@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boilerplate/utils/data_stream_mixin.dart';
-import 'package:flutter_boilerplate/widgets/loader/loader_screen.dart';
 import 'package:provider/provider.dart';
+
+import 'loader_screen.dart';
 
 class LoaderController extends ChangeNotifier with DataStreamMixin<LoaderData> {
   AnimationController? _controller;

@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Boilerplate',
       builder: (_, child) {
-        return LoaderScreen(child: child!);
+        return LoaderWrapper(child: child!);
       },
       theme: ThemeData(primarySwatch: Colors.red),
     );
