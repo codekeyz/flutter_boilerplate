@@ -17,10 +17,12 @@ class LoaderData {
 
 class LoadingScreen extends StatefulWidget {
   final LoaderController? loaderCtrl;
+  final Color? backgroundColor;
 
   const LoadingScreen({
     Key? key,
     this.loaderCtrl,
+    this.backgroundColor,
   }) : super(key: key);
 
   @override
@@ -48,7 +50,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     }
 
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: widget.backgroundColor ?? Theme.of(context).primaryColor,
       body: LoaderView(controller: animationCtrl, useColor: false),
     );
   }
