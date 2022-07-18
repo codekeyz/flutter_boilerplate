@@ -2,15 +2,48 @@
 
 Boilerplate template for all my opensource flutter projects.
 
-## Getting Started
+## How to Use
 
-This project is a starting point for a Flutter application.
+**Step 1:**
 
-A few resources to get you started if this is your first Flutter project:
+Download or clone this repo by using the link below:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+https://github.com/codekeyz/flutter_boilerplate.git
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Step 2:**
+
+Go to project root and execute the following command in console to fetch dependencies:
+
+```
+flutter pub get
+```
+
+**Step 3:**
+
+This project uses libraries that work with code generation, execute the following command to generate files:
+
+```
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
+
+or watch command in order to keep the source code synced automatically:
+
+```
+flutter packages pub run build_runner watch
+```
+
+## Boilerplate Features:
+
+- Routing - [AutoRouter](https://pub.dev/packages/auto_route)
+- State Management - [Provider](https://pub.dev/packages/provider)
+- JSON Parse / Serialization - [Json_Serializable](https://pub.dev/packages/json_serializable)
+- Dependency Injection - [Service Locator](https://pub.dev/packages/get_it)
+- Multiplatform Refresh Wrapper Widget
+- Overlay Loading Screen
+- EmptyState Widget
+
+### Up-Coming Features:
+
+- Network Client
